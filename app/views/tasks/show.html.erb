@@ -1,0 +1,9 @@
+<h1><%= @task.title %></h1>
+
+<%= link_to "Delete #{@task.title}",
+            task_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+
+<a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="tasks">
+</a>
